@@ -1,0 +1,17 @@
+<div *ngIf="messageList" class="container" style="width: 400px; margin-top: 20px;">
+
+
+  <table id="conversation" class="table table-striped" style="margin-top: 20px;">
+    <thead>
+    <tr>
+      <th>Greetings</th>
+    </tr>
+    </thead>
+    <tbody *ngFor="let message of messageList">
+    <tr>
+      <td>{{message}}</td>
+    </tr>
+    </tbody>
+  </table>
+
+</div>
